@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Web Page Content</title>
+</head>
+<body>
+    <script>
+        // Create a header
+        const header = document.createElement('h1');
+        header.textContent = 'Welcome to Indiana Spring';
+
+        // Create a short paragraph
+        const paragraph = document.createElement('p');
+        paragraph.textContent = 'Indiana jolts to life with the beauty of blooming flowers and the sweet scent of nature. As the weather warms, the landscape is adorned with vibrant colors, creating a picturesque scene for all to enjoy';
+
+
+        // Create an ordered list with 3 list items
+        const orderedList = document.createElement('ol');
+        const listItem1 = document.createElement('li');
+        const listItem2 = document.createElement('li');
+        const listItem3 = document.createElement('li');
+
+        // Add content to the list items
+        listItem1.textContent = 'Tulips';
+        listItem2.textContent = 'Daffodils';
+        listItem3.textContent = 'Dogwood Blossoms';
+
+        // Append the list items to the ordered list
+        orderedList.appendChild(listItem1);
+        orderedList.appendChild(listItem2);
+        orderedList.appendChild(listItem3);
+
+        // Append the header, paragraph, and ordered list to the body
+        document.body.appendChild(header);
+        document.body.appendChild(paragraph);
+        document.body.appendChild(orderedList);
+    </script>
+</body>
+</html>
